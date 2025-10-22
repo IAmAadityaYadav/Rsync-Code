@@ -6,12 +6,12 @@
 #
 
 # === Configuration ===
-SOURCE_SERVER="10.100.226.81"
+SOURCE_SERVER="IP"
 SOURCE_PATH="/sftp_home/sftp/sftp-files/"
-DEST_SERVER="10.100.224.161"
+DEST_SERVER="IP"
 DEST_PATH="/sftp_home/sftp/sftp-files/"
-LOG_FILE="/home/vdarwatkar/log/nfs_sync.log"
-LOCK_FILE="/home/vdarwatkar/nfs_sync.lock"
+LOG_FILE="/var/log/nfs_sync.log"
+LOCK_FILE="/var/log/nfs_sync.lock"
 
 # === Safety: Always remove lock file on exit or interruption ===
 trap 'rm -f "$LOCK_FILE"' EXIT
